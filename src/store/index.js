@@ -1,14 +1,9 @@
-import { createStore } from 'vuex'
+import auth from "./modules/auth";
+import Hieu2 from "./modules/hieu321";
 
-export default createStore({
-  state: {
-  },
-  getters: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
+export default {
   modules: {
-  }
-})
+    auth,
+    Hieu2,
+  },
+};

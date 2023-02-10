@@ -1,0 +1,14 @@
+{
+    "name":"Điều độ",
+  "short_name": "Điều độ",
+  "theme_color": "#ffffff",
+  "msTileColor": "#000000",
+  "appleMobileWebAppCapable": "yes",
+  "appleMobileWebAppStatusBarStyle": "black",
+
+  "workboxPluginMode": "InjectManifest",
+  "workboxOptions": {
+    "swSrc": "dev/sw.js"
+
+  }
+}
