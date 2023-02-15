@@ -1,6 +1,7 @@
 import { createApp } from "vue";
 import App from "./App.vue";
-
+import { test } from "./utils/Helper";
+import Persion from "./utils/Helper";
 import router from "./router";
 import axios from "axios";
 const token = localStorage.getItem("user-token");
@@ -32,4 +33,7 @@ const app = createApp(App);
 
 //   },
 // });
+// app.config.globalProperties.$test = test;
+
+app.config.globalProperties.$testClass = new Persion().haha;
 app.use(store).use(router).mount("#app");
