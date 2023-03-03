@@ -8,11 +8,22 @@ const token = localStorage.getItem("user-token");
 if (token) {
   axios.defaults.headers.common["Authorization"] = token;
 }
-
 // import { DataService } from "../src/api/dataService";
 
 import { createStore } from "vuex";
 import vuex from "./store";
+import "./registerServiceWorker";
+// if ("serviceWorker" in navigator) {
+//   console.log("navigator", navigator);
+//   navigator.serviceWorker
+//     .register("./sw.js")
+//     .then(function (registration) {
+//       console.log("Service worker registered:", registration);
+//     })
+//     .catch(function (error) {
+//       console.log("Service worker registration failed:", error);
+//     });
+// }
 
 const store = createStore(vuex);
 // const $DataService = new DataService()
